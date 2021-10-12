@@ -9,7 +9,7 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
 COPY requirements.txt /requirements.txt
 RUN cd /
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /Music_Player
-WORKDIR /Music_Player
+RUN mkdir /Priyo_Music
+WORKDIR /Priyo_Music
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
