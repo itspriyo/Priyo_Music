@@ -171,14 +171,14 @@ async def add_to_playlist(_, message: Message):
                 url=yturl
             elif type=="query":
                 try:
-                    await msg.edit("💗 **ꜱᴇᴀʀᴄʜɪɴɢ ᴠɪᴅᴇᴏꜱ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ...**")
+                    await msg.edit("💗 **ꜱᴇᴀʀᴄʜɪɴɢ ꜱᴏɴɢ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ...**")
                     ytquery=ysearch
                     results = YoutubeSearch(ytquery, max_results=1).to_dict()
                     url = f"https://youtube.com{results[0]['url_suffix']}"
                     title = results[0]["title"][:40]
                 except Exception as e:
                     await msg.edit(
-                        "Song not found.\nTry inline mode.."
+                        "ꜱᴏɴɢ ɴᴏᴛ ꜰᴏᴜɴᴅ.\nᴄᴏɴᴛᴀᴄᴛ @ɪᴛꜱᴘʀɪʏᴏ.."
                     )
                     LOGGER.error(str(e), exc_info=True)
                     await delete_messages([message, msg])
