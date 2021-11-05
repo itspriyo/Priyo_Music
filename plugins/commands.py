@@ -188,7 +188,7 @@ async def show_help(client, message):
 async def repo_(client, message):
     buttons = [
         [
-            InlineKeyboardButton('⚙️ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/PremiumNetworkCommunity'),
+            InlineKeyboardButton('⚙️ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/joinchat/RDOHvGIup6M4ODNl'),
             InlineKeyboardButton('🧩 ʀᴇᴘᴏꜱɪᴛᴏʀɪᴇꜱ', url='https://github.com/itspriyo/Music_Player'),     
         ],
         [
