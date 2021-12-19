@@ -53,7 +53,7 @@ IST = pytz.timezone(Config.TIME_ZONE)
 if Config.DATABASE_URI:
     from utils import db
 
-HOME_TEXT = "<b>Hey  [{}](tg://user?id={}) 🙋‍♂️\n\nʜɪ, ɪ'ᴍ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴜᴅɪᴏ/ᴠɪᴅᴇᴏ ᴠᴏɪᴄᴇᴄʜᴀᴛ ʙᴏᴛ ᴍᴏᴅɪꜰɪᴇᴅ ʙʏ ɪᴛꜱᴘʀɪʏᴏ.\nᴛʜɪꜱ ʙᴏᴛ ᴄᴀɴ ᴘʟᴀʏ ᴀɴʏ ᴠɪᴅᴇᴏꜱ/ʏᴛ ʟɪᴠᴇ/ᴅɪʀᴇᴄᴛ ʟɪɴᴋ..</b>"
+HOME_TEXT = "<b>Hey  [{}](tg://user?id={}) 🙋‍♂️\n\nʜɪ, ɪ'ᴍ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴜᴅɪᴏ/ᴠɪᴅᴇᴏ ᴠᴏɪᴄᴇᴄʜᴀᴛ ʙᴏᴛ ᴍᴏᴅɪꜰɪᴇᴅ ʙʏ ᴘʀɪʏᴏ.\nᴛʜɪꜱ ʙᴏᴛ ᴄᴀɴ ᴘʟᴀʏ ᴀɴʏ ᴠɪᴅᴇᴏꜱ/ʏᴛ ʟɪᴠᴇ/ᴅɪʀᴇᴄᴛ ʟɪɴᴋ..</b>"
 admin_filter=filters.create(is_admin) 
 
 @Client.on_message(filters.command(['start', f"start@{Config.BOT_USERNAME}"]))
@@ -129,7 +129,7 @@ async def start(client, message):
         return
     buttons = [
         [
-            InlineKeyboardButton('⚙️ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/joinchat/RDOHvGIup6M4ODNl'),
+            InlineKeyboardButton('⚙️ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/joinchat/'),
             InlineKeyboardButton('🧩 ʀᴇᴘᴏꜱɪᴛᴏʀɪᴇꜱ', url='https://github.com/itspriyo/Music_Player')
         ],
         [
@@ -188,7 +188,7 @@ async def show_help(client, message):
 async def repo_(client, message):
     buttons = [
         [
-            InlineKeyboardButton('⚙️ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/joinchat/RDOHvGIup6M4ODNl'),
+            InlineKeyboardButton('⚙️ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/joinchat/'),
             InlineKeyboardButton('🧩 ʀᴇᴘᴏꜱɪᴛᴏʀɪᴇꜱ', url='https://github.com/itspriyo/Music_Player'),     
         ],
         [
