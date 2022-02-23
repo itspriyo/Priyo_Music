@@ -81,7 +81,7 @@ async def add_to_playlist(_, message: Message):
                 k=await message.reply("This command is only for admins.")
                 await delete_messages([message, k])
                 return
-        msg = await message.reply_text("💗 **ᴄʜᴇᴄᴋɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ, ʙᴀʙʏ..**")
+        msg = await message.reply_text("😏 **একটু অপেক্ষা করো, সার্চ করছি**")
         if message.reply_to_message and message.reply_to_message.video:
             await msg.edit("💗 **ᴄʜᴇᴄᴋɪɴɢ ᴛᴇʟᴇɢʀᴀᴍ ꜰɪʟᴇꜱ...**")
             type='video'
@@ -167,11 +167,11 @@ async def add_to_playlist(_, message: Message):
             await msg.edit("Media added to playlist")
         elif type=="youtube" or type=="query":
             if type=="youtube":
-                await msg.edit("💗 **ꜱᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ, ᴊᴀᴀɴᴜ...**")
+                await msg.edit("😏 **একটু অপেক্ষা করো, সার্চ করছি**")
                 url=yturl
             elif type=="query":
                 try:
-                    await msg.edit("💗 **ꜱᴇᴀʀᴄʜɪɴɢ ꜱᴏɴɢ ꜰʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ...**")
+                    await msg.edit("💗 **শুনো, তোমার গান পেয়েছি...**")
                     ytquery=ysearch
                     results = YoutubeSearch(ytquery, max_results=1).to_dict()
                     url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -225,15 +225,15 @@ async def add_to_playlist(_, message: Message):
             await msg.edit("Link added to playlist")
         if not Config.CALL_STATUS \
             and len(Config.playlist) >= 1:
-            await msg.edit("ᴘʀᴏᴄᴇꜱꜱɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ, ᴊᴀᴀɴᴜ...")
+            await msg.edit("এইতো, এখনি ভিসিতে প্লে করবো 🥰")
             await download(Config.playlist[0], msg)
             await play()
         elif (len(Config.playlist) == 1 and Config.CALL_STATUS):
-            await msg.edit("ᴘʀᴏᴄᴇꜱꜱɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ, ᴊᴀᴀɴᴜ...")
+            await msg.edit("এইতো, এখনি ভিসিতে প্লে করবো 🥰")
             await download(Config.playlist[0], msg)  
             await play()
         elif message.command[0] == "fplay":
-            await msg.edit("ᴘʀᴏᴄᴇꜱꜱɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ, ᴊᴀᴀɴᴜ...")
+            await msg.edit("এইতো, এখনি ভিসিতে প্লে করবো 🥰")
             await download(Config.playlist[0], msg)  
             await play()
         else:
