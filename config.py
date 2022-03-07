@@ -48,7 +48,7 @@ class Config:
    
     #Database
     DATABASE_URI=os.environ.get("DATABASE_URI", None)
-    DATABASE_NAME=os.environ.get("DATABASE_NAME", "Priyo Music")
+    DATABASE_NAME=os.environ.get("DATABASE_NAME", "PriyoMusic")
 
 
     #heroku
