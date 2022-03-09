@@ -1,5 +1,5 @@
 git+https://github.com/pyrogram/pyrogram@master
-pytgcalls==0.8.1
+pytgcalls[pyrogram]
 parse-torrent-name
 tgcrypto
 yt-dlp
