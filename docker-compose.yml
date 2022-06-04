@@ -1,0 +1,12 @@
+version: "1.0"
+services:
+   priyo:
+    build: .
+    environment:
+      ADMIN_ONLY: $FALSE
+      API_ID: $API_ID
+      API_HASH: $API_HASH
+      BOT_TOKEN: $BOT_TOKEN
+      SESSION_STRING: $SESSION_STRING
+      SUPPORT: $SUPPORT
+      CHAT: $CHAT
